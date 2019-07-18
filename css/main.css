@@ -1,134 +1,140 @@
 /***** BASE STYLES *****/
+
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1em;
     color: #ffffff;
     background-color: #0B150C;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Roboto';
+    margin: 0;
+    width: 50%;
 }
 
 h3 {
     color: #5e8362;
     font-family: 'Roboto', sans-serif;
-    font-size: 36px;
+    font-size: 1.5em;
     text-align: center;
 }
 
-/***** GRID *****/
-.full-width {
-    width: 1200px;
-    margin: 0 auto;
+h4 {
+    font-size: 1.125em;
 }
 
-.half-width {
-    width: 600px;
-    float: left;
+p {
+    font-size: 1em;
 }
 
-.third-width {
-    width: 400px;
-    float: left;
+figure {
+    margin: 2em 0;
+}
+
+img {
+    width: 100%;
+}
+
+.content-wrapper {
+    width: 90%;
 }
 
 /***** HEADER SECTION *****/
-header {
-    height: 800px;       
-}
 
 header .nav {
-    height: 75px;
-    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 10px 0;
+    width: 100%;
 }
 
 nav {
-    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
 }
 
 nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
     margin-top: 20px;
-}
-nav ul li{
-    display: inline-block;
+    width: 100%;
 }
 
 nav ul li a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1em;
     color: #ffffff;
-    padding-left: 45px; 
 }
 
 nav ul li img {
     width: 40px;
-    height: 25px;
-    
+    height: 25px;    
 }
 
 .header-img {
-    height: 725px;
-    background: url(../img/header-background.jpg);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: url(../img/header-background.jpg) center no-repeat;    
     background-size: cover;
-}
-
-header h1 {
-    font-size: 30px;
-    float: left;
-}
-
-header h2 {
-    font-size: 72px;
-    font-family: 'Roboto';
-    margin-top: 300px;
 }
 
 header h2 span {
     color: #519F49;
 }
 
-hr.vertical {
-    width: 0px;
-    height: 20px;
-    display: inline-block;
-    margin: 0 0;
-}
-
 /***** PORTFOLIO SECTION *****/
 #portfolio {
-    height: 1400px;
-    
-}
-
-#portfolio .box {
-    height: 450px;
-}
-
-#portfolio .half-width div:nth-child(2) {
-    text-align: right;
-    padding-right: 50px;
+    display: flex;
+    justify-content: center;
 }
 
 #portfolio h4 {
-    font-size: 24px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
 }
 
-#portfolio img {
-    width: 550px;
-    height: 350px;
+#portfolio .project-description {
+    border-bottom: 2px solid #3f3f3f;
+}
+
+#portfolio .project-description :nth-child(3) {
+    padding-bottom: 1em;
 }
 
 /***** ABOUT SECTION *****/
 
 #about {
-    background: url(../img/about-me.png);
+    background: url(../img/about-me.png) center no-repeat;
     background-size: cover;
     color: black;
-    height: 600px;
-    padding-top: 20px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
 }
 
 #about h4 {
-    margin-top: 0px;
+    margin: 0px;
+}
+
+#about .about-me {
+    width: 100%;
 }
 
 #about p a {
@@ -139,9 +145,13 @@ hr.vertical {
 
 /***** CONTACT SECTION *****/
 #contact {
-    height: 400px;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
     text-align: center;
+}
+
+#contact address {
+    font-style: inherit;
 }
 
 #contact a {
@@ -154,13 +164,20 @@ hr.vertical {
 }
 
 #contact .social-media {
-    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #contact .social-media a {
     color: #5e8362;
     font-size: 2.5rem;
-    letter-spacing: 40px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
 }
 
 #contact .social-media a:hover {
@@ -170,14 +187,213 @@ hr.vertical {
 /***** FOOTER SECTION *****/
 
 footer {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 1em;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-footer hr.vertical {
-    width: 0px;
-    height: 12px;
-    display: inline-block;
-    margin: 0 5px;
+footer .content-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    width: 40%;
+    max-width: 150px;
+}
+
+footer ul img {
+    width: 50px;
+    height: 30px;
+}
+
+
+/***** TABLET STYLES *****/
+
+@media only screen and (min-width: 500px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    
+    nav ul li a{
+        font-size: 1.125em;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    #about {
+        height: 400px;
+    }
+    
+    #about .about-me {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 1.875em;
+    }
+    
+    h2 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.25em;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    nav ul li a{
+        font-size: 1.5em;
+    }
+
+    #portfolio {
+        margin-bottom: 20px;
+    }
+    
+    #portfolio .project-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #portfolio .reverse {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    #portfolio figure {
+        flex-basis: 45%;
+    }
+
+    #portfolio .project-description {
+        flex-basis: 45%;
+        border: none;
+    }
+
+    #portfolio .project-description p {
+        font-size: 1em;
+    }
+
+    #portfolio .project-description :nth-child(3) {
+        padding-bottom: 0;
+    }
+
+    #about {
+        height: 450px;
+    }
+
+    #about .about-me {
+        width: 70%;
+    }
+
+    #contact .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    #contact h3 {
+        flex-basis: 100%;
+    }
+
+    #contact address {
+        flex-basis: 50%;
+    }
+
+    #contact address a {
+        font-size: 1.25em;
+    }
+
+    #contact .social-media {
+        flex-basis: 50%;
+    }
+
+    #contact .contact-info {
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 1.875em;
+    }
+    
+    h2 {
+        font-size: 4em;
+    }
+
+    h3 {
+        font-size: 2.25em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .content-wrapper {
+        max-width: 1200px;
+    }
+
+    header .nav {
+        justify-content: space-between;        
+        flex-flow: row wrap;
+    }
+
+    nav {
+        width: 40%;
+    }
+
+    nav ul li a{
+        font-size: 1.875em;
+    }
+
+    .header-img {
+        height: 600px;
+    }
+
+    #portfolio .project-description p {
+        font-size: 1.5em;
+    }
+
+    #about {
+        height: 500px;
+    }
+
+    #contact address {
+        flex-basis: 30%;
+    }
+
+    #contact address a {
+        font-size: 1.5em;
+    }
+
+    #contact .social-media {
+        flex-basis: 30%;
+    }
+
+    #contact .contact-info {
+        flex-basis: 30%;
+    }
 }
