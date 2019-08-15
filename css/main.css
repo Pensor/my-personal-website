@@ -53,18 +53,25 @@ img {
 
 header .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     margin: 10px 0;
     width: 100%;
 }
 
+header .nav a.icon {
+    color: #ffffff;
+    display: block;
+  }
+
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65%;
+    display: none;
+    width: 100%;
+}
+
+nav.visible {
+    display: block;
 }
 
 nav ul {
@@ -80,11 +87,6 @@ nav ul li a {
     text-decoration: none;
     font-size: 1em;
     color: #ffffff;
-}
-
-nav ul li img {
-    width: 40px;
-    height: 25px;    
 }
 
 .header-img {
@@ -221,11 +223,15 @@ footer ul img {
     h1 {
         font-size: 1.5em;
     }
-    
+
+    header .nav a.icon {
+        font-size: 1.5em;
+    }
+
     nav ul li a{
         font-size: 1.125em;
     }
-
+    
     h2 {
         font-size: 2.5em;
     }
@@ -262,6 +268,10 @@ footer ul img {
 
     nav ul li a{
         font-size: 1.5em;
+    }
+    
+    header .nav a.icon {
+        font-size: 1.875em;
     }
 
     #portfolio {
@@ -361,7 +371,18 @@ footer ul img {
         flex-flow: row wrap;
     }
 
+    header .nav a.icon { 
+        display: none;
+    }
+
     nav {
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    nav .popout{
+        display: flex;
         width: 40%;
     }
 
