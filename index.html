@@ -13,21 +13,19 @@
 
 <body>
     <header>
-        <div class="nav">            
+        <nav class="nav-bar">            
             <h1>
                 patrick feldtmann <sub>web developer</sub> 
             </h1>
-            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <span id="navbar-toggle">
                 <i class="fa fa-bars"></i>
-            </a>            
-            <nav id="menu" class="visible">
-                <ul>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#contact">contact</a></li>                    
-                </ul>
-            </nav>            
-        </div>
+            </span>           
+            <ul class="main-nav" id="menu">
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>                    
+            </ul>                       
+        </nav>
         <div class="header-img">
             <div class="content-wrapper">
                 <h2>let's <span>code</span> something cool</h2>

@@ -1,4 +1,8 @@
-function toggleNav() {
-    const nav = document.getElementById("menu");
-    nav.classList.toggle("visible");
-  }
+const mainNav = document.getElementById('menu');
+const navbarToggle = document.getElementById('navbar-toggle');
+
+navbarToggle.addEventListener('click', () => {
+  
+  mainNav.classList.toggle('visible');
+
+});

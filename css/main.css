@@ -13,6 +13,7 @@ body {
 
 h1 {
     font-size: 1em;
+    margin-left: 20px;
 }
 
 h2 {
@@ -51,42 +52,33 @@ img {
 
 /***** HEADER SECTION *****/
 
-header .nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    margin-bottom: 10px;
+#navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer; 
+    color: rgba(255,255,255,0.8);
 }
 
-header .nav a.icon {
-    color: #ffffff;
-    display: block;
-  }
-
-nav {
-    display: none;
-    width: 100%;
-}
-
-nav.visible {
-    display: block;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-flow: column;
+.main-nav {
     list-style-type: none;
+    display: none;
     padding: 0;
-    height: 100px;
 }
 
-nav ul li a {
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main-nav li a {
     text-decoration: none;
     font-size: 1em;
     color: #ffffff;
+}
+
+.visible {
+    display: block;
 }
 
 .header-img {
@@ -222,11 +214,8 @@ footer ul img {
 /***** TABLET STYLES *****/
 
 @media only screen and (min-width: 500px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    header .nav a.icon {
+    
+    h1, #navbar-toggle {
         font-size: 1.5em;
     }
 
@@ -251,7 +240,7 @@ footer ul img {
     
 /***** BASE STYLES *****/
     
-    h1 {
+    h1, #navbar-toggle {
         font-size: 1.875em;
     }
     
@@ -273,16 +262,8 @@ footer ul img {
 
     /***** HEADER SECTION *****/
 
-    nav ul {
-        height: 150px;
-    }
-
-    nav ul li a{
+    .main-nav li a {
         font-size: 1.5em;
-    }
-    
-    header .nav a.icon {
-        font-size: 1.875em;
     }
 
     /***** PORTFOLIO SECTION *****/
@@ -390,28 +371,28 @@ footer ul img {
 
     /***** HEADER SECTION *****/
 
-    header .nav {
-        justify-content: space-around;        
-        flex-flow: row wrap;
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    header .nav a.icon { 
+    #navbar-toggle {
         display: none;
     }
 
-    nav {
-        justify-content: center;
-        align-items: center;
-        width: 45%;
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
     }
 
-    nav ul {
-        justify-content: space-around;
-        flex-flow: row;
-        margin: 0;
+    .main-nav li {
+        margin-left: 40px;
     }
-    
-    nav ul li a{
+
+    .main-nav li a{
         font-size: 1.875em;
     }
 
