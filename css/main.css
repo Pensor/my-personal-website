@@ -13,7 +13,7 @@ body {
 
 h1 {
     font-size: 1.125em;
-    /* margin: 20px 0 0 20px; */
+    margin: 20px;
 }
 
 h2 {
@@ -53,10 +53,10 @@ img {
 /***** HEADER SECTION *****/
 .nav-bar {
     overflow: hidden;
+    height: 70px;
     transition-property: height;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
-    margin-bottom: 10px;
 }
 
 #navbar-toggle {
@@ -65,6 +65,7 @@ img {
     right: 20px;
     cursor: pointer;
     width: 40px;
+    height: 30px;
     color: rgba(255,255,255,0.8);
 }
 
@@ -72,14 +73,14 @@ img {
     background-color: #ccc;
     border-radius: 25px;
     box-shadow: 0px 3px 13px rgba(0,0,0,.3);
-    height: 7px;
+    height: 20%;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(.13,.24,.35,1.64);
 }
 
 #navbar-toggle .one,
 #navbar-toggle .two{
-    margin-bottom: 7px;
+    margin-bottom: 20%;
 }
 
 #navbar-toggle.active .one{
@@ -109,13 +110,13 @@ img {
 
 .main-nav li a {
     text-decoration: none;
-    font-size: 1.125em;
+    font-size: 1.25em;
     color: #ffffff;
 }
 
 .visible {
     display: block;
-    height: 100%;
+    height: 180px;
 }
 
 .header-img {
@@ -252,13 +253,9 @@ footer ul img {
 
 @media only screen and (min-width: 500px) {
     
-    h1, #navbar-toggle {
+    /* h1 {
         font-size: 1.5em;
-    }
-
-    nav ul li a{
-        font-size: 1.125em;
-    }
+    } */
     
     h2 {
         font-size: 2.5em;
@@ -277,7 +274,7 @@ footer ul img {
     
 /***** BASE STYLES *****/
     
-    h1, #navbar-toggle {
+    h1 {
         font-size: 1.875em;
     }
     
@@ -301,6 +298,10 @@ footer ul img {
 
     .main-nav li a {
         font-size: 1.5em;
+    }
+
+    .visible {
+        height: 210px;
     }
 
     /***** PORTFOLIO SECTION *****/
