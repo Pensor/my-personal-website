@@ -158,11 +158,11 @@ header h2 span {
 }
 
 .left.slide {
-    animation: slide-left 2s ease-out;
+    animation: slide-left 1.5s ease-out;
 }
 
 .right.slide {
-    animation: slide-right 2s ease-out;
+    animation: slide-right 1.5s ease-out;
 }
 
 @keyframes slide-left {
@@ -343,18 +343,9 @@ footer ul img {
     }
     
     #navbar-toggle {
-        top: 20px;
-        right: 20px;
-        width: 40px;
-        height: 30px;
-    }
-
-    #navbar-toggle.active .one{
-        transform: translate(0, 14px) rotate(45deg);
-    }
-    
-    #navbar-toggle.active .three{
-        transform: translate(0,-14px) rotate(-45deg);
+        top: 30px;;
+        right: 30px;
+        transform: scale(2);
     }
     
     .main-nav li a {
